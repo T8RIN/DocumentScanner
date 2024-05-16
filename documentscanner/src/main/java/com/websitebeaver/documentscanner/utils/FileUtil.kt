@@ -28,12 +28,10 @@ class FileUtil {
             Locale.US
         ).format(Date())
 
-        // create file in pictures directory
-        val storageDir: File? = activity.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         return File.createTempFile(
             "DOCUMENT_SCAN_${pageNumber}_${dateTime}",
             ".jpg",
-            storageDir
+            activity.cacheDir
         )
     }
 }
