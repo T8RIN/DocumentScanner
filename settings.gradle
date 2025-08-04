@@ -12,6 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "DocumentScanner Demo"
-include ':documentscanner-demo'
+rootProject.name = "DocumentScanner"
 include ':documentscanner'
